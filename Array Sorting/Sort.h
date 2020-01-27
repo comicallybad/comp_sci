@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 class Sort
 {
@@ -25,7 +26,7 @@ public:
 
         for (int p = 0; p < sizeof(arrayList) / sizeof(arrayList[0]); p++)
         {
-            std::cout << arrayList[p] << std::endl;
+            cout << arrayList[p] << ", ";
         };
     };
 };
