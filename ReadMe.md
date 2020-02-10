@@ -9,5 +9,5 @@ IF THE CODE DOES NOT TAKE USER INPUT:
 2. Click play button in top right
 
 IF THE CODE DOES TAKE USER INPUT
-1. Use "g++ main.cpp -o main.exe"
+1. Use "g++ {include all .cpp files ex: main.cpp minMax.cpp} -o main.exe"
 2. On windows just type in terminal "main.exe" on mac type "./main.exe"
