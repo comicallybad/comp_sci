@@ -7,7 +7,7 @@ Repo For Comp Sci C++.
 
 FOR WINDOWS
 1. Install mingw, mark all compilers for installation
-2. Add C:/MINGW/Bin to PATH Variable
+2. Add {mingw location}/bin to PATH System Variables
 
 FOR MAC
 1. Install XCode
