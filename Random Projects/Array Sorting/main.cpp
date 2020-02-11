@@ -1,10 +1,10 @@
-#include "Sort.h"
+#include "sort.h"
 
 int main()
 {
     Sort s;
 
-    s.sort();
+    s.arraySort();
 
     return 0;
-}
+};
