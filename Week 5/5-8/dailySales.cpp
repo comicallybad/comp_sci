@@ -17,4 +17,5 @@ void DailySales::calculateSales()
 
     cout << fixed << showpoint << setprecision(2);
     cout << "\nTotal sales: $" << totalSales << endl;
+    cout << "\nAverage sales: $" << totalSales / NUM_DAYS << endl;
 }
