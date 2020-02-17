@@ -1,5 +1,4 @@
 #include "dailySales.h"
-using namespace std;
 
 int main()
 {
