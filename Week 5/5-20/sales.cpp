@@ -38,10 +38,7 @@ void Sales::doStuff()
     while (inputFile >> value) // If a value was read, execute the
     {
         numValues++; // loop again to count the value and
-        if ((numValues % 2) == 0)
-        {
-            total += value; // add it to the total
-        }
+        numValues % 2 == 0 ? total += value : 0;
     }
 
     cout << "Even number total: " << total << endl;
