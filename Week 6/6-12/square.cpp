@@ -18,6 +18,8 @@ void Square::init()
 
     // Display the area
     cout << "The area is " << area << endl;
+
+    multiplyArea();
 }
 
 double Square::getRadius()
@@ -33,3 +35,9 @@ double Square::square(double number)
 {
     return number * number;
 }
+
+double Square::multiplyArea()
+{
+    area *= 10;
+    cout << "The area times 10 is: " << area << endl;
+};

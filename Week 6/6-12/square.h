@@ -9,4 +9,5 @@ public:
     void init();
     double getRadius();
     double square(double number);
+    double multiplyArea();
 };
