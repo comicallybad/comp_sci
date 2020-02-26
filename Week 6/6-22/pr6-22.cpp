@@ -7,7 +7,7 @@ void displayStars(int starsPerRow = 10, int numRows = 1);
 
 int main()
 {
-	displayStars(10, 10); // starsPerRow = 7. numRows = 3. No defaults used.
+	displayStars(20, 10); // starsPerRow = 7. numRows = 3. No defaults used.
 	return 0;
 }
 
@@ -21,16 +21,22 @@ void displayStars(int starsPerRow, int numRows)
 {
 	// Nested loop. The outer loop controls the rows and
 	// the inner loop controls the number of stars per row.
-	for (int row = 1, k = 0; row <= numRows; ++row, k = 0)
+
+	for (int row = 0; row < numRows; row++)
 	{
-		for (int space = 1; space <= numRows - row; space++)
+		int counter = 0;
+		while (counter <= starsPerRow)
 		{
-			cout << " ";
-		}
-		while (k != 2 * row - 1)
-		{
-			cout << "*";
-			++k;
+			while (counter < starsPerRow / 2 - row || counter > starsPerRow / 2 + row && counter <= starsPerRow)
+			{
+				cout << "-";
+				counter++;
+			}
+			while (counter >= starsPerRow / 2 - row && counter <= starsPerRow / 2 + row && counter <= starsPerRow)
+			{
+				cout << "*";
+				counter++;
+			}
 		}
 		cout << endl;
 	}
