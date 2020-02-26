@@ -60,8 +60,11 @@ int Membership::getChoice()
     int choice;
 
     cin >> choice;
+
     while (choice < 1 || choice > 4)
     {
+        cin.clear();               // clear input buffer to restore cin to a usable state
+        cin.ignore(INT_MAX, '\n'); // ignore last input
         cout << "The only valid choices are 1-4. Please re-enter. ";
         cin >> choice;
     }
