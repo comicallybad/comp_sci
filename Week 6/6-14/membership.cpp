@@ -20,6 +20,14 @@ void Membership::init()
             cout << "For how many months? ";
             cin >> months;
 
+            while (months < 1)
+            {
+                cin.clear();  // clear input buffer to restore cin to a usable state
+                cin.ignore(); // ignore last input
+                cout << "Months must be a valid number greater than 0. Please re-enter. ";
+                cin >> months;
+            }
+
             switch (choice)
             {
             case 1:
