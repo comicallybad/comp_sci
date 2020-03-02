@@ -20,11 +20,9 @@ double WinningDivision::getSales(string divName)
     return temp;
 }
 
-void WinningDivision::findHighest(double sales1, double sales2, double sales3, double sales4)
+void WinningDivision::findHighest(double &sales1, double &sales2, double &sales3, double &sales4, double &highest, string &division)
 {
-    double highest = sales1;
-    string division = "Northern Division";
-
+    division = "Northern Division";
     if (sales2 > highest)
     {
         highest = sales2;
@@ -40,6 +38,4 @@ void WinningDivision::findHighest(double sales1, double sales2, double sales3, d
         highest = sales4;
         division = "Western Division";
     }
-
-    cout << "The highest division quarterly sales is: " << highest << " of division: " << division << endl;
 }
