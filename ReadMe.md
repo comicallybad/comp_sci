@@ -13,5 +13,5 @@ FOR MAC
 2. Make sure it is updated, it should come with g++ tools
 
 HOW TO RUN THE CODE
-1. Use "g++ {include all .cpp files ex: main.cpp minMax.cpp} -o main.exe"
+1. Use "g++ *.cpp -o main.exe"
 2. On windows just type in terminal "main.exe" on mac type "./main.exe"
