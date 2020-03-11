@@ -1,0 +1,3 @@
+4 10 16 
+The total of the numbers is: 30
+The average of the numbers is: 10
