@@ -13,7 +13,7 @@ int main()
     int array[SIZE] = {1, 5, 111, 3, 5, 87, 75, 98, 100, 82};
     int results;
 
-    results = ss.linearSearch(array, SIZE, 100);
+    results = ss.linearSearch(array, SIZE, 111);
 
     if (results == -1)
         cout << "You did not earn 100 points on any test\n";
@@ -23,7 +23,7 @@ int main()
         cout << (results + 1) << endl;
     }
 
-    results = ss.binarySearch(array, SIZE, 111);
+    results = ss.binarySearch(array, SIZE, 98);
 
     if (results == -1)
         cout << "That number does not exist in the array.\n";
