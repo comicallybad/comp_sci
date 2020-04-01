@@ -21,5 +21,8 @@ int main()
    // use pointer notation with the array name!
    p.printAgain(coins, intPtr, NUM_COINS);
 
+   cout << sizeof(coins) / sizeof(coins[0]) << endl;
+   cout << endl;
+
    return 0;
 }

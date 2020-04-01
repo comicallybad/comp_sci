@@ -23,7 +23,7 @@ void Pointers::printAgain(int coins[], int *intPtr, int NUM_COINS)
 {
     intPtr = coins;
     cout << "\nAnd here they are again:\n";
-    char junk;
+
     for (int i = 0; i < NUM_COINS; i++)
     {
         cout << "Contents at coins[" << i << "]: ";
@@ -36,8 +36,4 @@ void Pointers::printAgain(int coins[], int *intPtr, int NUM_COINS)
         cout << endl;
     }
     cout << "The number of elements stored in contigous memory is: ";
-    cout << sizeof(coins) / sizeof(coins[0]) << endl;
-    cout << endl;
-
-    cin >> junk;
 }
