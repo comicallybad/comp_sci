@@ -7,45 +7,45 @@ using namespace std;
 
 int main()
 {
-    fstream inputFile("radius.txt", ios::in);
-    fstream outputFile("radius.dat", ios::out | ios::binary);
+    fstream radiusFileInput("radius.txt", ios::in);
+    fstream radiusOutputFile("radius.dat", ios::out | ios::binary);
 
-    Circle cir;
+    Circle c;
 
     int *radius = nullptr;
     int SIZE = 0;
     int temp;
 
-    while (!inputFile.eof())
+    while (!radiusFileInput.eof())
     {
-        inputFile >> temp;
+        radiusFileInput >> temp;
         SIZE++;
     }
 
     radius = new int[SIZE];
 
-    inputFile.close();
-    inputFile.open("radius.txt", ios::in);
+    radiusFileInput.close();
+    radiusFileInput.open("radius.txt", ios::in);
 
     int count = 0;
-    while (!inputFile.eof())
+    while (!radiusFileInput.eof())
     {
-        inputFile >> temp;
+        radiusFileInput >> temp;
         radius[count] = temp;
         count++;
     }
 
-    inputFile.close();
+    radiusFileInput.close();
 
-    outputFile.write(reinterpret_cast<char *>(radius), sizeof(radius));
+    radiusOutputFile.write(reinterpret_cast<char *>(radius), sizeof(radius));
 
-    outputFile.close();
+    radiusOutputFile.close();
 
-    inputFile.open("radius.dat", ios::in | ios::binary);
+    radiusFileInput.open("radius.dat", ios::in | ios::binary);
 
     int newRadius[SIZE];
 
-    inputFile.read(reinterpret_cast<char *>(radius), sizeof(radius));
+    radiusFileInput.read(reinterpret_cast<char *>(radius), sizeof(radius));
 
     for (int i = 0; i < SIZE; i++)
         newRadius[i] = radius[i];
@@ -54,15 +54,15 @@ int main()
 
     for (int i = 0; i < SIZE; i++)
     {
-        cout << "\nFor a radius size of: " << newRadius[i];
-        dataOutput << "\nFor a radius size of: " << newRadius[i];
-        cir.setRadius(newRadius[i]);
-        cout << "\nThe circle area is: " << cir.getArea();
-        dataOutput << "\nThe circle area is: " << cir.getArea();
-        cout << "\nThe circle diameter is: " << cir.getDiameter();
-        dataOutput << "\nThe circle diameter is: " << cir.getDiameter();
-        cout << "\nThe circle circumference is: " << cir.getCircumference();
-        dataOutput << "\nThe circle circumference is: " << cir.getCircumference() << endl;
+        cout << "\n---For a radius size of: " << newRadius[i] << "---";
+        dataOutput << "\n---For a radius size of: " << newRadius[i] << "---";
+        c.setRadius(newRadius[i]);
+        cout << "\nThe circle area is: " << c.getArea();
+        dataOutput << "\nThe circle area is: " << c.getArea();
+        cout << "\nThe circle diameter is: " << c.getDiameter();
+        dataOutput << "\nThe circle diameter is: " << c.getDiameter();
+        cout << "\nThe circle circumference is: " << c.getCircumference();
+        dataOutput << "\nThe circle circumference is: " << c.getCircumference() << endl;
     }
 
     dataOutput.close();
