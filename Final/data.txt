@@ -1,0 +1,50 @@
+
+---For a radius size of: 10---
+The circle area is: 314.159
+The circle diameter is: 20
+The circle circumference is: 62.8318
+
+---For a radius size of: 20---
+The circle area is: 1256.64
+The circle diameter is: 40
+The circle circumference is: 125.664
+
+---For a radius size of: 30---
+The circle area is: 2827.43
+The circle diameter is: 60
+The circle circumference is: 188.495
+
+---For a radius size of: 40---
+The circle area is: 5026.54
+The circle diameter is: 80
+The circle circumference is: 251.327
+
+---For a radius size of: 50---
+The circle area is: 7853.97
+The circle diameter is: 100
+The circle circumference is: 314.159
+
+---For a radius size of: 60---
+The circle area is: 11309.7
+The circle diameter is: 120
+The circle circumference is: 376.991
+
+---For a radius size of: 70---
+The circle area is: 15393.8
+The circle diameter is: 140
+The circle circumference is: 439.823
+
+---For a radius size of: 80---
+The circle area is: 20106.2
+The circle diameter is: 160
+The circle circumference is: 502.654
+
+---For a radius size of: 90---
+The circle area is: 25446.9
+The circle diameter is: 180
+The circle circumference is: 565.486
+
+---For a radius size of: 100---
+The circle area is: 31415.9
+The circle diameter is: 200
+The circle circumference is: 628.318
